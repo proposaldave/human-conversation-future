@@ -1,0 +1,227 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Human Conversation turns human conversations into staff-approved coordination intelligence for community builders."
+    />
+    <meta name="theme-color" content="#f6f7fb" />
+    <title>Human Conversation | Demo-ready Community Intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Manrope:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles-a.css" />
+    <style>
+      .version-rail{position:fixed;top:14px;left:50%;z-index:80;display:flex;gap:6px;transform:translateX(-50%);border:1px solid rgba(17,24,39,.12);border-radius:999px;background:rgba(255,255,255,.9);box-shadow:0 18px 50px rgba(17,24,39,.14);backdrop-filter:blur(18px);padding:5px}
+      .version-rail a{display:inline-flex;min-height:34px;align-items:center;justify-content:center;border-radius:999px;padding:0 14px;font:800 .76rem/1 Manrope,Arial,sans-serif;color:#111827;text-decoration:none}
+      .version-rail a[aria-current="page"]{background:#111827;color:#fff}
+      @media (max-width:720px){.version-rail{top:auto;right:14px;bottom:14px;left:14px;justify-content:center;transform:none}.version-rail a{flex:1}}
+    </style>
+  </head>
+  <body>
+    <div class="version-rail" aria-label="Site version switcher">
+      <a href="./site-a.html" aria-current="page">Site A</a>
+      <a href="./index.html">Site B</a>
+    </div>
+    <header class="site-header" aria-label="Human Conversation navigation">
+      <a class="brand" href="#top" aria-label="Human Conversation home">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span>
+          <span></span>
+        </span>
+        <span>Human Conversation</span>
+      </a>
+      <nav aria-label="Page sections">
+        <a href="#demo">Demo</a>
+        <a href="#product">Product</a>
+        <a href="#trust">Trust</a>
+        <a href="#market">Market</a>
+      </nav>
+      <a class="header-cta" href="mailto:hello@humanconversation.com">Contact</a>
+    </header>
+
+    <main id="top">
+      <section class="hero-section">
+        <div class="hero-copy">
+          <p class="eyebrow red">Community intelligence platform</p>
+          <h1>Connection becomes coordination.</h1>
+          <p class="lede">
+            Human Conversation measures how connected people feel to the events, experiences, and people around them.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="primary-link" href="#demo">Start the demo</a>
+            <a class="secondary-link" href="mailto:hello@humanconversation.com">Contact</a>
+          </div>
+        </div>
+
+        <section class="hero-visual" aria-label="Human Conversation product map">
+          <div class="map-orbit map-orbit-one" aria-hidden="true"></div>
+          <div class="map-orbit map-orbit-two" aria-hidden="true"></div>
+          <div class="map-center">
+            <span class="pulse-dot"></span>
+            <strong>Conversation</strong>
+            <small>trusted human moment</small>
+          </div>
+          <div class="map-node node-disconnect">
+            <span></span>
+            <strong>Disconnected</strong>
+            <small>no next step</small>
+          </div>
+          <div class="map-node node-signal">
+            <span></span>
+            <strong>Felt connection</strong>
+            <small>event, experience, people</small>
+          </div>
+          <div class="map-node node-room">
+            <span></span>
+            <strong>Better room</strong>
+            <small>host + invitation</small>
+          </div>
+          <div class="map-node node-outcome">
+            <span></span>
+            <strong>Outcome</strong>
+            <small>learn and improve</small>
+          </div>
+          <svg class="map-lines" viewBox="0 0 720 560" role="img" aria-label="Conversation coordination flow">
+            <path d="M118 292 C206 188 286 174 360 268" />
+            <path d="M360 268 C456 146 552 136 624 220" />
+            <path d="M360 292 C476 328 536 384 586 466" />
+            <path d="M112 292 C220 404 374 424 586 466" />
+          </svg>
+          <div class="mini-console">
+            <span>Next best action</span>
+            <strong>Raise connection</strong>
+            <small>better room + warm host</small>
+          </div>
+        </section>
+      </section>
+
+      <section class="section demo-section" id="demo">
+        <div class="section-header">
+          <p class="eyebrow gold">How it works</p>
+          <h2>One loop. Four moves.</h2>
+        </div>
+        <div class="story-flow" aria-label="Human Conversation demo flow">
+          <div class="flow-card flow-red">
+            <span>01</span>
+            <strong>Spot</strong>
+            <small>disconnection</small>
+          </div>
+          <div class="flow-arrow" aria-hidden="true"></div>
+          <div class="flow-card flow-blue">
+            <span>02</span>
+            <strong>Talk</strong>
+            <small>human conversation</small>
+          </div>
+          <div class="flow-arrow" aria-hidden="true"></div>
+          <div class="flow-card flow-purple">
+            <span>03</span>
+            <strong>Read</strong>
+            <small>the signal</small>
+          </div>
+          <div class="flow-arrow" aria-hidden="true"></div>
+          <div class="flow-card flow-dark">
+            <span>04</span>
+            <strong>Move</strong>
+            <small>better room</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="section product-section" id="product">
+        <div class="product-copy">
+          <p class="eyebrow red">Community graph</p>
+          <h2>Human conversations create the graph of real connection.</h2>
+          <p>
+            They reveal when connection happens, where it happens, and who people feel connected to.
+            That graph turns into better invitations, groups, hosts, and experiences.
+          </p>
+        </div>
+        <div class="signal-board" aria-label="Felt connection signal board">
+          <div class="signal-core">
+            <span>Connection graph</span>
+            <strong>Felt connection</strong>
+            <small>when + where + who</small>
+          </div>
+          <div class="signal-chip chip-a">Time fit</div>
+          <div class="signal-chip chip-b">Room fit</div>
+          <div class="signal-chip chip-c">People fit</div>
+          <div class="signal-chip chip-d">Comfort level</div>
+          <div class="signal-chip chip-e">Host trust</div>
+          <div class="signal-chip chip-f">Return pull</div>
+          <div class="action-preview">
+            <span>Next best move</span>
+            <strong>Invite to the right room</strong>
+            <div class="action-tags" aria-label="Recommended invite ingredients">
+              <em>weekday evening</em>
+              <em>hosted play</em>
+              <em>bring a friend</em>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section trust-section" id="trust">
+        <div>
+          <p class="eyebrow gold">Trust and governance</p>
+          <h2>AI supports the relationship. It does not replace it.</h2>
+        </div>
+        <div class="governance-grid">
+          <article>
+            <h3>Trusted humans stay in front.</h3>
+            <p>Owners, staff, hosts, and members create the relationship. AI prepares, listens, structures, and remembers.</p>
+          </article>
+          <article>
+            <h3>Raw conversation is not the product.</h3>
+            <p>Only approved, useful staff memory becomes durable context. Raw transcripts and sensitive notes stay guarded.</p>
+          </article>
+          <article>
+            <h3>Every write has a gate.</h3>
+            <p>Staff-only observations, follow-ups, registrations, and outbound messages require human approval.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section market-section" id="market">
+        <div class="market-copy">
+          <p class="eyebrow red">Where it starts</p>
+          <h2>Starts in pickleball. Gets smarter inside every community and across communities.</h2>
+          <p>
+            Human Conversation starts with communities built around real events, real staff judgment, real retention problems,
+            real scheduling constraints, and live conversations. It starts by helping people move from
+            disconnection into the right room, group, host, or invitation. Then every outcome teaches the system
+            what creates connection next.
+          </p>
+        </div>
+        <div class="market-grid">
+          <article>
+            <span>First loop</span>
+            <strong>Rescue members before they drift</strong>
+            <p>Know who needs a trusted human reach-out and what would make the next step feel safe.</p>
+          </article>
+          <article>
+            <span>Community intelligence</span>
+            <strong>Each community improves itself</strong>
+            <p>Learn who belongs together, who can lead, who brings friends, and what experiences create connection.</p>
+          </article>
+          <article>
+            <span>Network effects</span>
+            <strong>What works travels across communities</strong>
+            <p>Patterns from one community improve the next: invitations, hosts, formats, follow-ups, and room design.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="closing-section">
+        <p class="eyebrow gold">Three-year company frame</p>
+        <h2>Human Conversation turns felt connection into a self-improving intelligence system.</h2>
+        <a class="primary-link" href="mailto:hello@humanconversation.com">hello@humanconversation.com</a>
+      </section>
+    </main>
+  </body>
+</html>
