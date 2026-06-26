@@ -1,18 +1,20 @@
 :root {
   color-scheme: light;
-  --paper: #f3ead8;
-  --paper-soft: #fbf7ef;
-  --surface: #fffaf1;
-  --ink: #1a1612;
-  --muted: rgba(26, 22, 18, 0.66);
-  --faint: rgba(26, 22, 18, 0.1);
-  --blue: #5b8fd4;
-  --blue-soft: rgba(91, 143, 212, 0.14);
-  --gold: #b8954a;
-  --gold-soft: rgba(184, 149, 74, 0.16);
-  --red: #c8462c;
-  --red-soft: rgba(200, 70, 44, 0.12);
-  --shadow: 0 22px 60px rgba(43, 31, 15, 0.12);
+  --paper: #f6f7fb;
+  --paper-soft: #ffffff;
+  --surface: #eef2ff;
+  --ink: #111827;
+  --muted: rgba(17, 24, 39, 0.66);
+  --faint: rgba(17, 24, 39, 0.11);
+  --blue: #3157ff;
+  --blue-soft: rgba(49, 87, 255, 0.12);
+  --gold: #7048c8;
+  --gold-soft: rgba(112, 72, 200, 0.14);
+  --red: #e8517a;
+  --red-soft: rgba(232, 81, 122, 0.13);
+  --charcoal: #151a24;
+  --charcoal-soft: #1c2230;
+  --shadow: 0 22px 60px rgba(17, 24, 39, 0.12);
 }
 
 * {
@@ -52,7 +54,7 @@ button {
   gap: 28px;
   padding: 16px 44px;
   border-bottom: 1px solid var(--faint);
-  background: rgba(243, 234, 216, 0.88);
+  background: rgba(246, 247, 251, 0.9);
   backdrop-filter: blur(18px);
 }
 
@@ -77,7 +79,7 @@ button {
   width: 36px;
   height: 36px;
   place-items: center;
-  border: 1px solid rgba(184, 149, 74, 0.55);
+  border: 1px solid rgba(112, 72, 200, 0.42);
   border-radius: 50%;
   background: var(--surface);
 }
@@ -212,7 +214,7 @@ h3 {
 .lede {
   max-width: 650px;
   margin-bottom: 26px;
-  color: rgba(26, 22, 18, 0.76);
+  color: rgba(17, 24, 39, 0.76);
   font-size: 1.22rem;
   font-weight: 700;
   line-height: 1.6;
@@ -232,19 +234,19 @@ h3 {
 .primary-link {
   background: var(--ink);
   color: var(--paper-soft);
-  box-shadow: 0 14px 28px rgba(26, 22, 18, 0.16);
+  box-shadow: 0 14px 28px rgba(17, 24, 39, 0.16);
 }
 
 .secondary-link {
   border: 1px solid var(--faint);
-  background: rgba(255, 250, 241, 0.64);
+  background: rgba(255, 255, 255, 0.72);
 }
 
 .proof-strip {
   gap: 0;
   border: 1px solid var(--faint);
   border-radius: 8px;
-  background: rgba(255, 250, 241, 0.62);
+  background: rgba(255, 255, 255, 0.76);
   box-shadow: var(--shadow);
 }
 
@@ -276,19 +278,19 @@ h3 {
 
 .console-shell {
   overflow: hidden;
-  border: 1px solid rgba(26, 22, 18, 0.16);
+  border: 1px solid rgba(17, 24, 39, 0.16);
   border-radius: 8px;
-  background: #211b16;
-  box-shadow: 0 28px 80px rgba(26, 22, 18, 0.24);
+  background: var(--charcoal);
+  box-shadow: 0 28px 80px rgba(17, 24, 39, 0.24);
 }
 
 .console-topbar {
   justify-content: space-between;
   gap: 18px;
   min-height: 58px;
-  border-bottom: 1px solid rgba(251, 247, 239, 0.12);
+  border-bottom: 1px solid rgba(246, 247, 251, 0.12);
   padding: 0 18px;
-  color: rgba(251, 247, 239, 0.74);
+  color: rgba(246, 247, 251, 0.74);
   font-size: 0.82rem;
   font-weight: 800;
 }
@@ -314,7 +316,7 @@ h3 {
 }
 
 .console-topbar strong {
-  border: 1px solid rgba(251, 247, 239, 0.16);
+  border: 1px solid rgba(246, 247, 251, 0.16);
   border-radius: 999px;
   padding: 5px 10px;
   color: var(--paper-soft);
@@ -326,14 +328,14 @@ h3 {
   display: grid;
   grid-template-columns: minmax(150px, 0.75fr) minmax(260px, 1.25fr) minmax(160px, 0.8fr);
   gap: 1px;
-  background: rgba(251, 247, 239, 0.12);
+  background: rgba(246, 247, 251, 0.12);
 }
 
 .queue-panel,
 .insight-panel,
 .action-panel {
   min-height: 500px;
-  background: #211b16;
+  background: var(--charcoal);
   padding: 20px;
 }
 
@@ -346,10 +348,10 @@ h3 {
 }
 
 .queue-panel article {
-  border: 1px solid rgba(251, 247, 239, 0.12);
+  border: 1px solid rgba(246, 247, 251, 0.12);
   border-radius: 8px;
   padding: 14px;
-  background: rgba(251, 247, 239, 0.06);
+  background: rgba(246, 247, 251, 0.06);
 }
 
 .queue-panel article + article {
@@ -366,7 +368,7 @@ h3 {
 .action-panel p,
 .memory-line p,
 .action-panel li {
-  color: rgba(251, 247, 239, 0.7);
+  color: rgba(246, 247, 251, 0.7);
 }
 
 .priority {
@@ -385,13 +387,13 @@ h3 {
 }
 
 .gold-priority {
-  background: rgba(184, 149, 74, 0.2);
-  color: #f0d48a;
+  background: rgba(112, 72, 200, 0.24);
+  color: #d8ccff;
 }
 
 .blue-priority {
-  background: rgba(91, 143, 212, 0.2);
-  color: #a9cbff;
+  background: rgba(49, 87, 255, 0.24);
+  color: #bdcbff;
 }
 
 .insight-panel h2 {
@@ -407,11 +409,11 @@ h3 {
 .signal-stack p,
 .memory-line {
   margin: 0;
-  border: 1px solid rgba(251, 247, 239, 0.12);
+  border: 1px solid rgba(246, 247, 251, 0.12);
   border-radius: 8px;
   padding: 14px;
-  background: rgba(251, 247, 239, 0.06);
-  color: rgba(251, 247, 239, 0.82);
+  background: rgba(246, 247, 251, 0.06);
+  color: rgba(246, 247, 251, 0.82);
   font-weight: 800;
 }
 
@@ -426,7 +428,7 @@ h3 {
 
 .memory-line {
   margin-top: 18px;
-  border-color: rgba(91, 143, 212, 0.3);
+  border-color: rgba(49, 87, 255, 0.34);
 }
 
 .action-panel ol {
@@ -439,10 +441,10 @@ h3 {
 }
 
 .approval-box {
-  border: 1px solid rgba(200, 70, 44, 0.4);
+  border: 1px solid rgba(232, 81, 122, 0.42);
   border-radius: 8px;
   padding: 16px;
-  background: rgba(200, 70, 44, 0.1);
+  background: rgba(232, 81, 122, 0.12);
 }
 
 .approval-box p {
@@ -500,7 +502,7 @@ h3 {
   border: 1px solid var(--faint);
   border-radius: 8px;
   padding: 24px;
-  background: rgba(255, 250, 241, 0.58);
+  background: rgba(255, 255, 255, 0.76);
   box-shadow: var(--shadow);
 }
 
@@ -543,9 +545,9 @@ h3 {
   display: grid;
   grid-template-columns: 310px minmax(0, 1fr);
   overflow: hidden;
-  border: 1px solid rgba(26, 22, 18, 0.14);
+  border: 1px solid rgba(17, 24, 39, 0.14);
   border-radius: 8px;
-  background: #f9f1e2;
+  background: #f3f5ff;
   box-shadow: var(--shadow);
 }
 
@@ -560,7 +562,7 @@ h3 {
 .workbench-nav button {
   min-height: 74px;
   border: 0;
-  background: rgba(255, 250, 241, 0.86);
+  background: rgba(255, 255, 255, 0.88);
   color: var(--ink);
   cursor: default;
   padding: 18px;
@@ -613,7 +615,7 @@ h3 {
   overflow: hidden;
   border: 1px solid var(--faint);
   border-radius: 8px;
-  background: rgba(255, 250, 241, 0.58);
+  background: rgba(255, 255, 255, 0.78);
   box-shadow: var(--shadow);
 }
 
@@ -633,7 +635,7 @@ h3 {
 }
 
 .data-table strong {
-  background: rgba(26, 22, 18, 0.04);
+  background: rgba(49, 87, 255, 0.06);
   color: var(--red);
   font-size: 0.75rem;
   text-transform: uppercase;
@@ -654,7 +656,7 @@ h3 {
   grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
   gap: 48px;
   align-items: start;
-  background: #1f1914;
+  background: var(--charcoal-soft);
   color: var(--paper-soft);
 }
 
@@ -668,8 +670,8 @@ h3 {
 
 .governance-grid article {
   min-height: 0;
-  background: rgba(251, 247, 239, 0.07);
-  border-color: rgba(251, 247, 239, 0.13);
+  background: rgba(246, 247, 251, 0.07);
+  border-color: rgba(246, 247, 251, 0.13);
   box-shadow: none;
 }
 
@@ -681,7 +683,7 @@ h3 {
 
 .governance-grid p {
   margin-bottom: 0;
-  color: rgba(251, 247, 239, 0.72);
+  color: rgba(246, 247, 251, 0.72);
 }
 
 .market-grid {
