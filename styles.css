@@ -381,6 +381,7 @@ h3 {
 }
 
 .thesis-grid p,
+.section-heading p:not(.eyebrow),
 .proof-copy p,
 .proof-grid p,
 .trust-grid p,
