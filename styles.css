@@ -1328,6 +1328,203 @@ h3 {
   line-height: 1.02;
 }
 
+.learning-system {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.82fr) minmax(360px, 1fr) minmax(260px, 0.82fr);
+  gap: 14px;
+  align-items: stretch;
+}
+
+.learning-panel,
+.network-core,
+.network-strip > div {
+  border: 1px solid rgba(243, 234, 216, 0.16);
+  border-radius: 10px;
+  background: rgba(243, 234, 216, 0.06);
+}
+
+.learning-panel {
+  display: grid;
+  align-content: space-between;
+  min-height: 520px;
+  padding: 24px;
+}
+
+.signal-panel > strong {
+  display: block;
+  max-width: 12ch;
+  color: var(--paper-soft);
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 0.98;
+}
+
+.signal-bars {
+  display: grid;
+  gap: 14px;
+}
+
+.signal-bars div {
+  display: grid;
+  gap: 7px;
+}
+
+.signal-bars span {
+  color: rgba(255, 250, 240, 0.72);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.signal-bars i {
+  display: block;
+  height: 9px;
+  border-radius: 999px;
+  background:
+    linear-gradient(90deg, var(--gold-2) var(--bar), rgba(255, 250, 240, 0.12) var(--bar));
+}
+
+.network-core {
+  position: relative;
+  display: grid;
+  min-height: 520px;
+  place-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at center, rgba(91, 143, 212, 0.16), transparent 30%),
+    radial-gradient(circle at 28% 26%, rgba(184, 149, 74, 0.12), transparent 24%),
+    rgba(243, 234, 216, 0.055);
+}
+
+.network-core strong {
+  z-index: 2;
+  max-width: 9ch;
+  color: var(--paper-soft);
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(2.25rem, 3.5vw, 4rem);
+  line-height: 0.92;
+  text-align: center;
+}
+
+.network-ring,
+.network-dot {
+  position: absolute;
+  display: block;
+}
+
+.network-ring {
+  border: 1px solid rgba(243, 234, 216, 0.13);
+  border-radius: 50%;
+}
+
+.ring-one {
+  inset: 11%;
+}
+
+.ring-two {
+  inset: 23%;
+  border-color: rgba(91, 143, 212, 0.28);
+}
+
+.ring-three {
+  inset: 36%;
+  border-color: rgba(73, 180, 160, 0.28);
+}
+
+.network-dot {
+  z-index: 3;
+  display: grid;
+  width: 72px;
+  height: 72px;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--ink);
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.dot-a {
+  top: 17%;
+  left: 22%;
+  background: var(--gold-2);
+}
+
+.dot-b {
+  top: 24%;
+  right: 18%;
+  background: var(--blue);
+}
+
+.dot-c {
+  right: 22%;
+  bottom: 18%;
+  background: var(--mint);
+}
+
+.dot-d {
+  bottom: 16%;
+  left: 18%;
+  background: var(--paper-soft);
+}
+
+.compounding-panel {
+  gap: 10px;
+}
+
+.learning-row {
+  border: 1px solid rgba(243, 234, 216, 0.12);
+  border-radius: 10px;
+  background: rgba(255, 250, 240, 0.06);
+  padding: 16px;
+}
+
+.learning-row strong {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--paper-soft);
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.learning-row small {
+  color: rgba(255, 250, 240, 0.62);
+  font-weight: 800;
+}
+
+.network-strip {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.network-strip > div {
+  min-height: 172px;
+  padding: 24px;
+}
+
+.network-strip span {
+  display: block;
+  margin-bottom: 18px;
+  color: var(--gold);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.network-strip strong {
+  display: block;
+  max-width: 560px;
+  color: var(--paper-soft);
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(1.55rem, 2.2vw, 2.35rem);
+  line-height: 1.02;
+}
+
 .trust-section {
   background:
     linear-gradient(140deg, #f3ead8, #eef5f1 48%, #f7efe2);
@@ -1499,6 +1696,15 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .learning-system,
+  .network-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .network-core {
+    min-height: 460px;
+  }
+
   .future-sidebar {
     min-height: 0;
   }
@@ -1561,6 +1767,8 @@ h3 {
   .thesis-grid,
   .trust-grid,
   .move-grid,
+  .learning-system,
+  .network-strip,
   .graph-proof,
   .learning-strip {
     grid-template-columns: 1fr;
@@ -1681,6 +1889,8 @@ h3 {
   .trust-grid,
   .move-grid,
   .future-platform,
+  .learning-system,
+  .network-strip,
   .platform-board {
     width: auto;
     max-width: 100%;
@@ -1689,6 +1899,9 @@ h3 {
   .thesis-grid article,
   .trust-grid article,
   .move-card,
+  .learning-panel,
+  .network-core,
+  .network-strip > div,
   .platform-stage {
     width: auto;
     max-width: 100%;
@@ -1745,6 +1958,8 @@ h3 {
   .thesis-grid,
   .trust-grid,
   .future-platform,
+  .learning-system,
+  .network-strip,
   .future-sidebar,
   .future-main,
   .move-grid,
@@ -1761,7 +1976,10 @@ h3 {
   }
 
   .platform-stage,
-  .platform-learning {
+  .platform-learning,
+  .learning-panel,
+  .network-core,
+  .network-strip > div {
     width: 100% !important;
     max-width: 100% !important;
   }
@@ -1840,6 +2058,40 @@ h3 {
   .platform-learning strong {
     font-size: 1.28rem;
     text-align: left;
+  }
+
+  .learning-panel {
+    min-height: 0;
+    padding: 16px;
+  }
+
+  .signal-panel > strong {
+    max-width: 13ch;
+    margin: 28px 0;
+    font-size: 1.86rem;
+  }
+
+  .network-core {
+    min-height: 330px;
+  }
+
+  .network-core strong {
+    font-size: 2.2rem;
+  }
+
+  .network-dot {
+    width: 56px;
+    height: 56px;
+    font-size: 0.52rem;
+  }
+
+  .network-strip > div {
+    min-height: 0;
+    padding: 18px;
+  }
+
+  .network-strip strong {
+    font-size: 1.34rem;
   }
 
   .graph-copy h2,
