@@ -1101,11 +1101,11 @@ h3 {
 }
 
 .market-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .market-grid article {
-  min-height: 290px;
+  min-height: 310px;
 }
 
 .closing-section {
@@ -1151,7 +1151,8 @@ h3 {
   }
 
   .demo-grid,
-  .product-modules {
+  .product-modules,
+  .market-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
