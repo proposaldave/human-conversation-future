@@ -609,6 +609,234 @@ h3 {
   background: var(--paper);
 }
 
+.graph-band {
+  background: var(--paper);
+}
+
+.graph-story {
+  display: grid;
+  grid-template-columns: minmax(390px, 0.76fr) minmax(0, 1.24fr);
+  gap: clamp(26px, 3.6vw, 48px);
+  align-items: center;
+}
+
+.graph-copy {
+  max-width: 610px;
+}
+
+.graph-copy h2 {
+  margin-bottom: 22px;
+  font-size: clamp(2.7rem, 3.9vw, 4.45rem);
+}
+
+.graph-copy p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: clamp(1.02rem, 1.35vw, 1.28rem);
+  font-weight: 800;
+  line-height: 1.65;
+}
+
+.graph-proof {
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.14fr) minmax(0, 0.96fr);
+  gap: 12px;
+  min-height: 520px;
+  border: 1px solid rgba(26, 22, 18, 0.14);
+  border-radius: 14px;
+  background:
+    linear-gradient(rgba(243, 234, 216, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(243, 234, 216, 0.045) 1px, transparent 1px),
+    #15110e;
+  background-size: 44px 44px;
+  box-shadow: var(--shadow);
+  color: var(--paper-soft);
+  padding: 14px;
+}
+
+.proof-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(243, 234, 216, 0.14);
+  border-radius: 12px;
+  background: rgba(255, 250, 240, 0.055);
+  padding: 18px;
+}
+
+.conversation-proof,
+.next-proof {
+  display: grid;
+  align-content: space-between;
+}
+
+.conversation-proof blockquote {
+  margin: 34px 0 28px;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(2rem, 2.35vw, 2.65rem);
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 0.98;
+}
+
+.proof-signals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.proof-signals span {
+  border: 1px solid rgba(243, 234, 216, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 250, 240, 0.07);
+  color: rgba(255, 250, 240, 0.74);
+  padding: 7px 10px;
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+
+.graph-map-panel {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.graph-map {
+  position: relative;
+  min-height: 430px;
+  margin-top: 8px;
+  border: 1px solid rgba(243, 234, 216, 0.1);
+  border-radius: 12px;
+  background:
+    radial-gradient(circle at 22% 24%, rgba(184, 149, 74, 0.16), transparent 24%),
+    radial-gradient(circle at 76% 34%, rgba(91, 143, 212, 0.16), transparent 22%),
+    radial-gradient(circle at 54% 72%, rgba(73, 180, 160, 0.14), transparent 24%),
+    rgba(18, 14, 11, 0.46);
+}
+
+.map-node,
+.map-line,
+.map-note {
+  position: absolute;
+  display: block;
+}
+
+.map-node {
+  z-index: 2;
+  display: grid;
+  width: 68px;
+  height: 68px;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--ink);
+  font-size: 0.66rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.map-person {
+  top: 52px;
+  left: 28px;
+  background: var(--gold-2);
+}
+
+.map-friend {
+  top: 104px;
+  right: 30px;
+  background: var(--blue);
+}
+
+.map-host {
+  right: 62px;
+  bottom: 82px;
+  background: var(--mint);
+}
+
+.map-room {
+  bottom: 38px;
+  left: 76px;
+  background: var(--paper-soft);
+}
+
+.map-line {
+  z-index: 1;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(184, 149, 74, 0.08), rgba(184, 149, 74, 0.92));
+  transform-origin: left center;
+}
+
+.map-line-one {
+  top: 98px;
+  left: 92px;
+  width: 180px;
+  transform: rotate(15deg);
+}
+
+.map-line-two {
+  right: 86px;
+  bottom: 144px;
+  width: 150px;
+  transform: rotate(-47deg);
+}
+
+.map-line-three {
+  bottom: 104px;
+  left: 134px;
+  width: 174px;
+  transform: rotate(-7deg);
+}
+
+.map-note {
+  border: 1px solid rgba(243, 234, 216, 0.12);
+  border-radius: 999px;
+  background: rgba(18, 14, 11, 0.72);
+  color: rgba(255, 250, 240, 0.68);
+  padding: 6px 9px;
+  font-size: 0.65rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.map-when {
+  top: 24px;
+  right: 24px;
+}
+
+.map-where {
+  bottom: 24px;
+  left: 24px;
+}
+
+.map-who {
+  right: 26px;
+  bottom: 26px;
+}
+
+.next-proof {
+  gap: 12px;
+}
+
+.next-move {
+  border: 1px solid rgba(243, 234, 216, 0.12);
+  border-radius: 10px;
+  background: rgba(255, 250, 240, 0.07);
+  padding: 16px;
+}
+
+.next-move strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.98rem;
+  font-weight: 900;
+  line-height: 1.22;
+}
+
+.next-move small {
+  display: block;
+  color: rgba(255, 250, 240, 0.62);
+  font-weight: 800;
+  line-height: 1.34;
+}
+
 .thesis-copy,
 .section-heading,
 .unlock-copy {
@@ -1123,6 +1351,22 @@ h3 {
     max-width: 760px;
   }
 
+  .graph-story {
+    grid-template-columns: 1fr;
+  }
+
+  .graph-copy {
+    max-width: 900px;
+  }
+
+  .graph-proof {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .graph-map-panel {
+    grid-column: 1 / -1;
+  }
+
   .unlock-board {
     grid-template-columns: 1fr;
     gap: 12px;
@@ -1215,8 +1459,17 @@ h3 {
   .thesis-grid,
   .trust-grid,
   .move-grid,
+  .graph-proof,
   .learning-strip {
     grid-template-columns: 1fr;
+  }
+
+  .graph-map-panel {
+    grid-column: auto;
+  }
+
+  .graph-map {
+    min-height: 330px;
   }
 
   .future-topline {
@@ -1316,6 +1569,9 @@ h3 {
 
   .section > *,
   .unlock-section > *,
+  .graph-story,
+  .graph-proof,
+  .proof-card,
   .thesis-copy,
   .section-heading,
   .unlock-copy,
@@ -1383,6 +1639,8 @@ h3 {
   }
 
   .thesis-copy,
+  .graph-story,
+  .graph-proof,
   .section-heading,
   .unlock-copy,
   .thesis-grid,
@@ -1402,6 +1660,80 @@ h3 {
     max-width: calc(100vw - 48px) !important;
     margin-right: 0 !important;
     margin-left: 0 !important;
+  }
+
+  .graph-copy h2,
+  .graph-copy p {
+    max-width: 100%;
+  }
+
+  .graph-copy,
+  .proof-card {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .graph-proof {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .conversation-proof blockquote {
+    margin: 22px 0 24px;
+    font-size: 1.74rem;
+    overflow-wrap: anywhere;
+  }
+
+  .graph-map {
+    min-height: 285px;
+  }
+
+  .map-node {
+    width: 54px;
+    height: 54px;
+    font-size: 0.56rem;
+  }
+
+  .map-person {
+    top: 46px;
+    left: 20px;
+  }
+
+  .map-friend {
+    top: 82px;
+    right: 22px;
+  }
+
+  .map-host {
+    right: 42px;
+    bottom: 74px;
+  }
+
+  .map-room {
+    bottom: 34px;
+    left: 58px;
+  }
+
+  .map-line-one {
+    top: 78px;
+    left: 70px;
+    width: 136px;
+  }
+
+  .map-line-two {
+    right: 65px;
+    bottom: 120px;
+    width: 116px;
+  }
+
+  .map-line-three {
+    bottom: 84px;
+    left: 104px;
+    width: 130px;
+  }
+
+  .map-note {
+    font-size: 0.58rem;
   }
 
   .thesis-copy h2,
