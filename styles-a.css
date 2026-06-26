@@ -203,6 +203,10 @@ h1 {
   line-height: 1.01;
 }
 
+.mobile-title {
+  display: none;
+}
+
 h2 {
   margin-bottom: 20px;
   font-size: 3.35rem;
@@ -1347,7 +1351,15 @@ h3 {
 
   .hero-section {
     gap: 24px;
+    overflow: hidden;
     padding-top: 40px;
+  }
+
+  .hero-copy,
+  .lede,
+  h1 {
+    width: 100%;
+    max-width: calc(100vw - 64px);
   }
 
   h1 {
@@ -1355,14 +1367,24 @@ h3 {
     font-size: 2.32rem;
   }
 
+  .desktop-title {
+    display: none;
+  }
+
+  .mobile-title {
+    display: block;
+  }
+
   h2 {
     font-size: 2.24rem;
   }
 
   .lede {
+    max-width: 29ch;
     margin-bottom: 18px;
-    font-size: 1.05rem;
+    font-size: 1rem;
     line-height: 1.48;
+    overflow-wrap: anywhere;
   }
 
   .hero-actions {
